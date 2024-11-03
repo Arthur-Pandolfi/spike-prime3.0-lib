@@ -17,8 +17,8 @@ class button:
 
 class light:
 
-    self.POWER = 0
-    self.CONNECT = 1
+    POWER = 0
+    CONNECT = 1
 
     def color(self, light:int, color:int) -> None:
         """
