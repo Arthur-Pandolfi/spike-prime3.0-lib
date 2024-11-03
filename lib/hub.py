@@ -1,8 +1,7 @@
 class button:
 
-    def __init__(self):
-        self.LEFT = 1
-        self.RIGHT = 2
+    LEFT = 1
+    RIGHT = 2
 
     def pressed(port:int) -> int:
         """
@@ -18,9 +17,8 @@ class button:
 
 class light:
 
-    def __init__(self):
-        self.POWER = 0
-        self.CONNECT = 1
+    self.POWER = 0
+    self.CONNECT = 1
 
     def color(self, light:int, color:int) -> None:
         """
@@ -40,18 +38,17 @@ class light:
 
 class motion_sensor:
 
-    def __init__(self):
-        self.TAPPED = 0
-        self.DOUBLE_TAPPED = 1
-        self.SHAKEN = 2
-        self.FALLING = 3
-        self.UNKNOWN = -1
-        self.TOP = 0
-        self.FRONT = 1
-        self.RIGHT = 2
-        self.BOTTOM = 3
-        self.BACK = 4
-        self.LEFT = 5
+    TAPPED = 0
+    DOUBLE_TAPPED = 1
+    SHAKEN = 2
+    FALLING = 3
+    UNKNOWN = -1
+    TOP = 0
+    FRONT = 1
+    RIGHT = 2
+    BOTTOM = 3
+    BACK = 4
+    LEFT = 5
 
     def acceleration(raw_unfiltered:bool) -> tuple[int, int, int]:
         """
@@ -186,15 +183,14 @@ class motion_sensor:
         motion_sensor.LEFT Olhando para a face frontal do SPIKE Prime Hub, o lado esquerdo dele.
         """
 
-    class port:
+class port:
+    A = 0
+    B = 1
+    C = 2
+    D = 3
+    E = 4
+    F = 5
 
-        def __init__(self):
-            self.A = 0
-            self.B = 1
-            self.C = 2
-            self.D = 3
-            self.E = 4
-            self.F = 5
 
 def device_uuid() -> str:
     """
